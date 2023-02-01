@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      background-color: white;
+    }
+    input {
+      font-size: 14px;
+      color: rgb(0, 0, 65);
+    }
+  </style>
+</head>
+<body>
+    <h1>ยืม - คืน อุปกรณ์</h1>
+    <h2>Please login</h2>
+    <form onsubmit="return validateForm()">
+      <label for="ID">ID :</label>
+      <input type="text" id="ID" name="ID" required>
+      <br><br>
+      <label for="password">ID password :</label>
+      <input type="text" id="password" name="password" required>
+      <br><br>
+      <p>
+        <a href="file:///C:\class\GitHub\ProjectLab\register.html">
+            <h1>register</h1>
+        </a>
+    </p>
+    <div if id = "admin", name = "admin1234" >
+        <p1>
+            <a href="file:///C:\class\GitHub\ProjectLab\register.html">
+                <input type="button" value="Submit">
+            </a>
+        </p1>
+    </div>
+    </form>
+
+    <script>
+      function validateForm() {
+        var ID = document.forms["form"]["ID"].value;
+        var password = document.forms["form"]["password"].value;
+      }
+    </script>
+  </body>
+  </html>

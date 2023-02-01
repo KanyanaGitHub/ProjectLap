@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>register</title>
+  <style>
+    body {
+      background-color: white;
+    }
+    input {
+      font-size: 14px;
+      color: rgb(0, 0, 65);
+    }
+  </style>
+</head>
+<body>
+    <h1>ยืม - คืน อุปกรณ์</h1>
+    <h2>Please Register</h2>
+    <form onsubmit="return validateForm()">
+      <label for="studentID">Student ID:</label>
+      <input type="text" id="studentID" name="studentID" required>
+      <br><br>
+      <label for="PhoneNumber">your phone number:</label>
+      <input type="int" id="PhoneNumber" name="PhoneNumber" required>
+      <br><br>
+      <p>
+        <a href ="file:///C:\class\GitHub\ProjectLab\login.html">
+            <input type="button" value="back"/>
+        </a>
+    </p>
+      <input type="submit" value="Submit">
+    </form>
+</body>
