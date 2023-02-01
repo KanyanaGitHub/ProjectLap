@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+<html lang="en"></html>
+
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Login</title>
   <style>
     body {
@@ -15,32 +18,28 @@
 <body>
     <h1>ยืม - คืน อุปกรณ์</h1>
     <h2>Please login</h2>
-    <form onsubmit="return validateForm()">
-      <label for="ID">ID :</label>
-      <input type="text" id="ID" name="ID" required>
-      <br><br>
-      <label for="password">ID password :</label>
-      <input type="text" id="password" name="password" required>
-      <br><br>
-      <p>
-        <a href="file:///C:\class\GitHub\ProjectLab\register.html">
-            <h1>register</h1>
-        </a>
-    </p>
-    <div if id = "admin", name = "admin1234" >
-        <p1>
-            <a href="file:///C:\class\GitHub\ProjectLab\register.html">
-                <input type="button" value="Submit">
-            </a>
-        </p1>
-    </div>
-    </form>
+    <form>
+      <label class = "dec_label"for = "id" i >ID : </label>
+      <input class = "dec_input" type="text" id="id" name="id" size="25">
+      <br><br><br>
+      <label class = "dec_label"for = "password" i >password : </label>
+      <input class = "dec_input" type="text" password="password" name="password" size="25">
+      <br><br><br>
+      <div id="output_block2">
+        <button type="button" id = "sub_list" onclick="submitForm()">Submit</button>
+       </div>
+       <script>
+        function submitForm() {
+            var fName = document.getElementById("f_name").value;
+            var sId = document.getElementById("p_id").value;
 
-    <script>
-      function validateForm() {
-        var ID = document.forms["form"]["ID"].value;
-        var password = document.forms["form"]["password"].value;
-      }
+            if (fName === "" || sId === "") {
+                alert("Please fill in First-Last Name and Student ID");
+            } else {
+                window.location.href = "main.html";
+            }
+        }
+     </script>
     </script>
   </body>
   </html>
