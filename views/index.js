@@ -28,7 +28,7 @@ var session;
 app.get('/',(req,res) => {
     session = req.session;
     if(session.userid){
-        res.send("Walcome User <a hraf=\'/logout'>click to logout</a>");
+        res.send("Walcome User <a> hraf=\'/logout'>click to logout</a>");
     }else
     res.sendFile('views/index.html',{root:__dirname})
 });
@@ -38,6 +38,7 @@ app.post('/user',(req,res) => {
         session=req.session;
         session.userid=req.body.username;
         console.log(req.session)
+        res.send("hello Walcome<a> hraf=\'/logout'>click to logout</a>");
     }
     else{
         res.send('Invalib username or password');
