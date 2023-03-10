@@ -24,11 +24,11 @@ app.use(cookieParser());
 const myusername = 'admin'
 const mypassword = '1234'
 
-var sessions;
+var session;
 
 app.get('/',(req,res) => {
-    sessions = req.session;
-    if(sessions.userid){
+    session = req.session;
+    if(session.userid){
         res.send("Walcome User <a> hraf=\'/logout'>click to logout</a>");
     }else
     res.sendFile('views/index.html',{root:__dirname});
@@ -36,8 +36,8 @@ app.get('/',(req,res) => {
 
 app.post('/user',(req,res) => {
     if(req.body.username == myusername && req.body.password == mypassword){
-        sessions=req.session;
-        sessions.userid=req.body.username;
+        session=req.session;
+        session.userid=req.body.username;
         console.log(req.session);
         res.send("hello Walcome<a> hraf=\'/logout'>click to logout</a>");
     }
