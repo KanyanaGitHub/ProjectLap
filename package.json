@@ -6,13 +6,12 @@
     "express-session": "^1.17.3",
     "nodemon": "^2.0.20"
   },
-  "name": "projectlab",
+  "name": "express",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/KanyanaGitHub/ProjectLap/issues"
   },
-  "homepage": "https://github.com/KanyanaGitHub/ProjectLap#readme"
+  "homepage": "https://github.com/KanyanaGitHub/ProjectLap#readme",
+  "devDependencies": {}
 }
