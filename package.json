@@ -4,6 +4,7 @@
     "express": "npm:Express@^3.0.1",
     "Express": "^3.0.1",
     "express-session": "^1.17.3",
+    "mongoose": "^7.0.1",
     "nodemon": "^2.0.20"
   },
   "name": "express",
@@ -23,6 +24,5 @@
   "bugs": {
     "url": "https://github.com/KanyanaGitHub/ProjectLap/issues"
   },
-  "homepage": "https://github.com/KanyanaGitHub/ProjectLap#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/KanyanaGitHub/ProjectLap#readme"
 }
